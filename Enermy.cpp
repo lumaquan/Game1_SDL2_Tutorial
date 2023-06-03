@@ -1,6 +1,6 @@
 #include "Enemy.h"
 
-Enemy::Enemy(const char* filename):GameObject(filename) 
+Enemy::Enemy(const char* filename) :GameObject(filename)
 {
 	xpos = 400;
 	ypos = 0;
@@ -8,7 +8,7 @@ Enemy::Enemy(const char* filename):GameObject(filename)
 
 Enemy::~Enemy()
 {
-	
+
 }
 
 void Enemy::Update()
@@ -25,6 +25,6 @@ void Enemy::Update()
 	destRect.y = ypos;
 	destRect.h = 64;
 	destRect.w = 64;
-   
+
 }
 

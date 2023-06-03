@@ -3,7 +3,7 @@
 #include "GameObject.h"
 
 
-class Enemy:public GameObject
+class Enemy :public GameObject
 {
 public:
 	Enemy(const char* filename);
