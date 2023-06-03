@@ -1,9 +1,9 @@
 #include "GameObject.h"
 #include "TextureManager.h"
 
-GameObject::GameObject(const char* filename, SDL_Renderer* renderer) :renderer{ renderer }, xpos{ 0 }, ypos{ 0 }
+GameObject::GameObject(const char* filename) : xpos{ 0 }, ypos{ 0 }
 {
-	objTexture = TextureManager::LoadTexture(filename, renderer);
+	objTexture = TextureManager::LoadTexture(filename);
 }
 
 GameObject::~GameObject()
@@ -29,7 +29,7 @@ void GameObject::Update()
 
 void GameObject::Renderer()
 {
-	SDL_RenderCopy(renderer, objTexture, NULL, &destRect);
+	SDL_RenderCopy(Game::renderer, objTexture, NULL, &destRect);
 }
 
 

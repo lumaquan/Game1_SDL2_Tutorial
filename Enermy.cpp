@@ -1,6 +1,6 @@
 #include "Enemy.h"
 
-Enemy::Enemy(const char* filename, SDL_Renderer* renderer):GameObject(filename, renderer) 
+Enemy::Enemy(const char* filename):GameObject(filename) 
 {
 	xpos = 400;
 	ypos = 0;

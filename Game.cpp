@@ -2,12 +2,15 @@
 #include "TextureManager.h"
 #include "GameObject.h"
 #include "Enemy.h"
+#include "Mapa.h"
 #include <iostream>
 
 
 GameObject* mario;
 GameObject* browser;
+Mapa* mapa;
 
+SDL_Renderer* Game::renderer = nullptr;
 
 Game::Game()
 {
@@ -38,8 +41,9 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 				SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 				std::cout << "Renderer created!" << std::endl;
 				isRunning = true;
-				mario = new GameObject("assets/mario_fighter.png", renderer);
-				browser = new Enemy("assets/browser_fighter.png", renderer);
+				mapa = new Mapa();
+				mario = new GameObject("assets/mario_fighter.png");
+				browser = new Enemy("assets/browser_fighter.png");
 			}
 		}
 	}
@@ -71,13 +75,12 @@ void Game::update()
 	count++;
 	mario->Update();
 	browser->Update();
-	if (count % 60 == 0)
-		std::cout << count << std::endl;
 }
 
 void Game::render()
 {
 	SDL_RenderClear(renderer);
+	mapa->drawMap();
 	mario->Renderer();
 	browser->Renderer();
 	SDL_RenderPresent(renderer);

@@ -30,6 +30,9 @@
     <ClCompile Include="Enermy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Mapa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -44,12 +47,18 @@
     <ClInclude Include="Enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Mapa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="assets\mario_fighter.png">
+    <Image Include="assets\water.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="assets\turtle_flyer.png">
+    <Image Include="assets\browser_fighter.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\mario_fighter.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

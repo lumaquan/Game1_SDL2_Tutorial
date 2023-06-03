@@ -6,7 +6,7 @@
 class Enemy:public GameObject
 {
 public:
-	Enemy(const char* filename, SDL_Renderer* renderer);
+	Enemy(const char* filename);
 	~Enemy();
 	void Update();
 

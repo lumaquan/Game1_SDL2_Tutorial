@@ -5,7 +5,7 @@
 class GameObject {
 
 public:
-	GameObject(const char* filename, SDL_Renderer* renderer);
+	GameObject(const char* filename);
 	virtual ~GameObject();
 	virtual void Update();
 	virtual void Renderer();
@@ -18,5 +18,4 @@ protected:
 
 private:
 	SDL_Texture* objTexture;
-	SDL_Renderer* renderer;
 };

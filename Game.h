@@ -14,11 +14,12 @@ public:
 	void clean();
 	bool running();
 
+	static SDL_Renderer* renderer;
+
 private:
 	int count = 0;
 	bool isRunning = false;
 	SDL_Window* window = nullptr;
-	SDL_Renderer* renderer = nullptr;
 };
 
 #endif GAME_H
