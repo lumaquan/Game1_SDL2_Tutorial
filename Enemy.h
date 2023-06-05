@@ -7,7 +7,6 @@ class Enemy :public GameObject
 {
 public:
 	Enemy(const char* filename);
-	~Enemy();
+	virtual ~Enemy();
 	void Update();
-
 };

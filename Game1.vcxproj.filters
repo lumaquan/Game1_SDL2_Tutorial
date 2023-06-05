@@ -55,10 +55,13 @@
     <Image Include="assets\water.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="assets\browser_fighter.png">
+    <Image Include="assets\browser.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="assets\mario_fighter.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\grass.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

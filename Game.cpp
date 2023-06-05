@@ -43,7 +43,7 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 				isRunning = true;
 				mapa = new Mapa();
 				mario = new GameObject("assets/mario_fighter.png");
-				browser = new Enemy("assets/browser_fighter.png");
+				browser = new Enemy("assets/browser.png");
 			}
 		}
 	}
